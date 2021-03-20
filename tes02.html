@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE 02</title>
+<style>body{
+background-color: rgb(75, 238, 238);
+font: normal 20pt arial ;
+color: rgb(12, 3, 3);
+
+}
+h1{color: rgb(228, 30, 30);}
+
+</style>
+
+
+</head>
+<body>
+    <h1>De acordo com a suas respostas!</h1>
+
+
+</body>
+<script>
+var nome = window.prompt('Qual é o seu nome?')
+var idade = window.prompt(`Ola ${nome} bem vindo, quantos anos vc tem?`)
+var n1 = Number(window.prompt (`${nome} escreva qualquer numero q desejar`))
+var n2 = Number(window.prompt (`Agora escolha mais um outro numero`))
+var s = n1 + n2
+document.write (`O seu nome é:<strong>${nome}</strong>.<br/>vc tem <strong>${idade}</strong> anos. <br/>`)
+document.write (`O seu nome tem <strong>${nome.length}</strong> letras?<br/>`)
+document.write (`O seu nome em letras maiusculas fica assim: <strong>${nome.toUpperCase()}</strong><br/>`)
+document.write (`Já em letras minusculas ele fica desse jeito: <strong>${nome.toLowerCase()}</strong><br/>`)
+document.write (`O numero q vc escolheu foi <strong>${n1}</strong> e <strong>${n2}</strong><br/>`)
+document.write (`Se colocar esses dois numeros juntos então eles viram <strong>${n1}${n2}</strong><br/>`)
+document.write (`A soma desses numeros é <strong>${s}</strong>`)
+</script>
+</html>
