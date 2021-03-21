@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Calculadora</title>
+</head>
+<body>
+    <h1 id="titulo">Calculadora</h1>
+    <input type="text" name="inicial1" id="inicial1" onmouseover="sobre()" onmouseout="sair()"> + 
+    <input type="text" name="inicial1" id="inicial2" onmouseover="sobre2()">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="resultadoi">Resultado</div>
+    
+</body><script>
+
+
+function somar(){
+    var nu1 = document.getElementById('inicial1')
+    var nu2 = document.getElementById('inicial2')
+    var resultado = document.getElementById('resultadoi')
+    var n1 = Number(nu1.value)
+    var n2 =Number(nu2.value)
+    var s = n1 + n2
+    resultado.innerHTML = `${s}`}
+
+    function sobre(){
+        var sobre = document.querySelector('input#inicial1')
+                sobre.style.background='PeachPuff'}
+
+        function sobre2(){
+    var sobre = document.querySelector('input#inicial2')
+    sobre.style.background='PeachPuff'}
+        
+        
+
+
+
+    
+</script>
+
+
+
+
+</html>

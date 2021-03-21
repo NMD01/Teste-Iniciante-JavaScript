@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DOM</title>
+</head>
+<style>body{ background-color: red; 
+font: normal 20pt arial;color: white;
+
+
+}
+h1{color: black; font: normal 25pt arial}
+
+
+
+
+</style>
+
+
+
+<body>
+    <h1 id="qidade">Quantos anos vc tem?</h1>
+    <p1 id="ola">Como vai, estou fazendo um teste aqui</p1>
+    <p1 id="numero"> testando!!!! </p1>
+
+
+
+</body>
+
+<script>
+var idade = document.querySelector('h1#qidade')
+var idade1 = Number(prompt(`${idade.innerText}`))
+
+
+
+var numero1 = document.querySelector('p1#numero')
+alert(`${numero1.innerText}`)
+document.write(`<br/> Vc tem: ${idade1} anos <br/>`)
+
+
+var numero2 = Number(prompt(`digite um numero`))
+var numero3 = Number(prompt(`digite outro numero`))
+var soma = numero2 + numero3
+
+var repetindo = document.querySelector('p1#ola')
+document.write(`A soma dos numeros são: ${soma}`)
+
+document.write(`<br/> ${repetindo.innerText}` )
+
+</script>
+</html>
