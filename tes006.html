@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 06</title>
+</head>
+<body>
+    <h1>Teste 06</h1>
+    <input type="text" name="nome" id="nome"> 
+    <input type="button" value="confirmar" onclick="nome()">
+    <div id="resposta">Qual é o seu nome?</div>
+    <div id="resposta2"></div>
+    <div id="resposta3"></div>
+
+
+</body><script>function nome(){
+    var nome1 = document.querySelector('input#nome')
+    var resposta1 = document.querySelector('div#resposta')
+    var nome2 = String(nome1.value)
+    var resposta2 = document.querySelector('div#resposta2')
+
+    
+    resposta1.innerHTML=`O seu nome tem ${nome2.length} letras`
+    resposta2.innerHTML= `O seu nome em letras maiusculas é assim: ${nome2.toUpperCase()}`
+    resposta3.innerHTML=`O seu nome em letras minusculas é assim: ${nome2.toLowerCase()}`
+    
+
+
+
+
+
+}
+
+
+
+</script>
+
+
+</html>
