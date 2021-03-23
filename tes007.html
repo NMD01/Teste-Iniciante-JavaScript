@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando pais</title>
+</head>
+<body>
+    <h1 id="pergunta">Qual pais vc nasceu?</h1>
+    <input type="text" name="inicial" id="inicial">
+    <input type="button" value="Confirmar" onclick="pais()">
+    <div id="resposta"></div>
+
+</body><script>function pais(){
+    var pais = document.querySelector('input#inicial')
+    var resposta1 = document.querySelector('div#resposta')
+    var pais1 = String(pais.value)
+
+    resposta1.innerHTML=`<p>${pais1}<p/>`
+
+        if(pais1 == 'brasil' || pais1 == 'Brasil'){
+            resposta1.innerHTML += `voce é Brasileiro`
+        }else{
+            resposta1.innerHTML += `Voce é um estrangeiro`}
+            
+            
+        
+        
+
+
+
+}</script>
+</html>
