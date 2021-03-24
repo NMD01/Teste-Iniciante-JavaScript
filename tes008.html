@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade</title>
+</head>
+<body>
+    <h1 id="pergunta">Quantos anos vc tem?</h1>
+    <input type="text" name="inicial" id="inicial">
+    <input type="button" value="confirmar" onclick="confirmar()">
+    <div id="resultado1"></div>
+</body><script>function confirmar(){
+
+    var idade1 = document.querySelector('input#inicial')
+    var resultado = document.querySelector('div#resultado1')
+    var idade2 = Number(idade1.value)
+
+    resultado.innerHTML=`<p>a sua idade é: <strong> ${idade2} ANOS<strong/></p>`
+
+    if (idade2 >= 18){
+        resultado.innerHTML+=`<strong>BEM-VINDO!!!<strong/> `
+    }else{
+        resultado.innerHTML+=`<strong>LAMENTO.</strong> <br/> <p>VC NÃO TEM IDADE PARA ACESSAR ESSE TIPO DE CONTEÚDO<p/>`
+    }
+
+
+
+}
+
+
+
+
+</script>
+
+
+</html>
