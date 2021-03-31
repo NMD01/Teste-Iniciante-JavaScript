@@ -1,0 +1,29 @@
+body{
+    background-color: #B0E0E6;
+    font: normal 15pt arial;
+}
+section{
+    background-color: white;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+#txtano{
+    width: 50px;
+}
+#botão{
+    padding: 15px;
+    font-size: 15pt;
+}
+footer{
+    
+}
