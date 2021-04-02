@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head><style>h1{
+    background-color: rgb(233, 32, 32); 
+    font: normal 35pt arial;
+    text-align: center;}
+
+    input{font: normal 10pt arial; }
+
+    div{font: normal 15pt arial;}
+
+    h2{font: normal 20pt arial;margin-top: 50px;}
+
+
+    
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+    <h1 id="titulo">Calculadora</h1>
+    <h2 id="adição">Adição</h2>
+    <input type="number" name="inicial1" id="inicial1"onmouseover="sobre1()" onmouseout="sair1()" > + 
+    <input type="number" name="inicial2" id="inicial2"onmouseover="sobre2()" onmouseout="sair2()" >
+    <input id="botão1" type="button" value="Somar" onclick="somar()" >
+    <div id="resultado1"><strong>Resultado<strong></div>
+
+    <h2 id="subtração">Subtração</h2>
+    <input type="number" name="inicial3" id="inicial3"onmouseover="sobre3()" onmouseout="sair3()"> - 
+    <input type="number" name="inicial4" id="inicial4"onmouseover="sobre4()"onmouseout="sair4()">
+    <input id="botão2" type="button" value="Subtrair"onclick="subtrair()" > 
+    <div id="resultado2"><strong>Resultado<strong></div>
+
+    <h2 id="multiplicação">Multiplicação</h2>
+    <input type="number" name="inicial5" id="inicial5" onmouseover="sobre5()"onmouseout="sair5()" > x 
+    <input type="number" name="inicial6" id="inicial6"onmouseover="sobre6()"onmouseout="sair6()">
+    <input id="botão3" type="button" value="Multiplicar" onclick="multiplicar()" >
+    <div id="resultado3"><strong>Resultado<strong></div>
+
+    <h2 id="divisão">Divisão</h2>
+    <input type="number" name="inicial7" id="inicial7"onmouseover="sobre7()"onmouseout="sair7()"> / 
+    <input type="number" name="inicial8" id="inicial8"onmouseover="sobre8()"onmouseout="sair8()">
+    <input id="botão4" type="button" value="Dividir" onclick="dividir()" >
+    <div id="resultado4"><strong>Resultado<strong></div>
+
+
+</body>
+<script>function somar(){
+    var nu1 = document.querySelector('input#inicial1')
+    var nu2 = document.querySelector('input#inicial2')
+    var resultado = document.querySelector('div#resultado1')
+    var n1=Number(nu1.value)
+    var n2=Number(nu2.value)
+    var soma = n1 + n2
+    resultado.innerHTML=`<strong>${soma}<strong/>`}
+
+function sobre1(){
+        var sobre = document.querySelector('input#inicial1')
+        sobre.style.background='PeachPuff'}
+function sair1(){
+    var sair = document.querySelector('input#inicial1')
+    sair.style.background='white'}
+function sobre2(){
+        var sobre = document.querySelector('input#inicial2')
+        sobre.style.background='PeachPuff'}  
+function sair2(){
+    var sair = document.querySelector('input#inicial2')
+    sair.style.background='white'}  
+    
+
+
+    
+    function subtrair(){
+        var nu1 = document.querySelector('input#inicial3')
+        var nu2 = document.querySelector('input#inicial4')
+        var resultado = document.querySelector('div#resultado2')
+        var n1 = Number(nu1.value)
+        var n2 = Number(nu2.value)
+        var subtração = n1 - n2
+        resultado.innerHTML=`<strong>${subtração}<strong/>`}
+
+function sobre3(){
+        var sobre = document.querySelector('input#inicial3')
+        sobre.style.background='PeachPuff'}
+function sair3(){
+    var sair = document.querySelector('input#inicial3')
+    sair.style.background='white'}
+function sobre4(){
+        var sobre = document.querySelector('input#inicial4')
+        sobre.style.background='PeachPuff'}  
+function sair4(){
+    var sair = document.querySelector('input#inicial4')
+    sair.style.background='white'} 
+
+        function multiplicar(){
+            var nu1 = document.querySelector('input#inicial5')
+            var nu2 = document.querySelector('input#inicial6')
+            var resultado = document.querySelector('div#resultado3')
+            var n1 = Number(nu1.value)
+            var n2 = Number(nu2.value)
+            var m = n1 * n2
+            resultado.innerHTML = `<strong>${m}<strong/>`}
+
+function sobre5(){
+        var sobre = document.querySelector('input#inicial5')
+        sobre.style.background='PeachPuff'}
+function sair5(){
+    var sair = document.querySelector('input#inicial5')
+    sair.style.background='white'}
+function sobre6(){
+        var sobre = document.querySelector('input#inicial6')
+        sobre.style.background='PeachPuff'}  
+function sair6(){
+    var sair = document.querySelector('input#inicial6')
+    sair.style.background='white'} 
+
+            function dividir(){
+                var nu1 = document.querySelector('input#inicial7')
+                var nu2 = document.querySelector('input#inicial8')
+                var resultado = document.querySelector('div#resultado4')
+                var n1 = Number(nu1.value)
+                var n2 = Number(nu2.value)
+                var d = n1 / n2
+                resultado.innerHTML = `<strong>${d}<strong/>`}
+                    
+function sobre7(){
+        var sobre = document.querySelector('input#inicial7')
+        sobre.style.background='PeachPuff'}
+function sair7(){
+    var sair = document.querySelector('input#inicial7')
+    sair.style.background='white'}
+function sobre8(){
+        var sobre = document.querySelector('input#inicial8')
+        sobre.style.background='PeachPuff'}  
+function sair8(){
+    var sair = document.querySelector('input#inicial8')
+    sair.style.background='white'}                   
+
+
+
+            
+
+                
+
+
+
+
+
+        
+
+
+
+    
+
+    
+
+
+
+
+
+
+</script>
+
+
+</html>
