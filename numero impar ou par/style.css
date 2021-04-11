@@ -1,0 +1,26 @@
+body{
+    color: black;
+    background-color:#0d1a20 ;
+}
+h1{
+    text-align: center;
+    font: normal 20pt arial;
+    color: white;
+    
+}
+section{
+    margin: auto;
+    text-align: center;
+    background-color:white;
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    
+    font: normal 15pt arial;
+
+}
+div#res{
+    margin-top: 50px;
+
+
+}
